@@ -33,10 +33,9 @@ class App extends React.Component {
               id: snapShot.id,
               ...snapShot.data()
             }
-          }//, () => {
-          //   console.log(this.state); // passed in as an argument to this.setState so that its called after this.setState has finished executing. async, remember?
-          // }
-          );
+          }, () => {
+              console.log(this.state); // passed in as an argument to this.setState so that its called after this.setState has finished executing. async, remember?
+          });
         });
       }
       else {
